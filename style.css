@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 :root {
     font-family: "Noto Sans", sans-serif;
@@ -89,8 +90,9 @@ err {
 }
 
 #toptitle {
+    font-family: "Dela Gothic One", sans-serif;
     font-size: 150%;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #blink {
