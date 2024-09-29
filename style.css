@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+
+:root {
+    font-family: "Noto Sans", sans-serif;
+
+    /*white theme*/
+    --white-main-background: #ffffff;
+    --white-main-text: #000000;
+
+    --white-secondary-background: #b6b6b6;
+    --white-secondary-text: #bde6ff;
+
+    --white-unnoticible-text: #ffffff;
+    
+    /*main theme*/
+    --main-background: #3F72AF;
+    --main-text: #F9F7F7;
+
+    --secondary-background: #225288;
+    --secondary-text: #539af2;
+
+    --unnoticible-text: #b4c1d1;
+
+    /*var reset
+    --main-background: var(--white-main-background);
+    --main-text: var(--white-main-text);
+
+    --secondary-background: var(--white-secondary-background);
+    --secondary-text: var(--white-secondary-text);
+
+    --unnoticible-text: var(--white-unnoticible-text);
+    */
+}
+
+logo::before {
+    font-family: "Emblema One", system-ui;
+    content: '///';
+    font-weight: bolder;
+    border-color: white;
+}
+
+@keyframes _blink {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+nav {
+    background-color: var(--secondary-background);
+    padding: 10px;
+    padding-left: 18px;
+    border-radius: 0px 0px 16px 16px;
+    margin-bottom: 5%;
+}
+
+html {
+    background-color: var(--main-background);
+    color:var(--main-text);
+}
+body {
+    margin: 0;
+}
+
+#titlef {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header {
+    font-size:x-large;
+    font-weight: bold;
+}
+
+video {
+    width: 90%;
+}
+
+err {
+    color: red;
+}
+
+#tv {
+    color:var(--secondary-text);
+}
+
+#sec-col {
+    color: var(--secondary-text);
+}
+
+#toptitle {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+#blink {
+    animation: _blink 2s infinite ease-in-out;
+}
+
+.card {
+    max-width: 70%;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 550px;
+    background-color: var(--secondary-background);
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.card > span {
+    font-size: 105%;
+}
+
+#date {
+    font-size: smaller;
+    color: var(--unnoticible-text);
+}
+
+#series > a {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+#series > a:hover {
+    color: var(--secondary-text);
+}
+
+.preview {
+    width: 100%;
+    border-radius: 10px;
+}
+
+p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
