@@ -1,50 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 :root {
-    font-family: "Noto Sans", sans-serif;
-
-    /*white theme*/
-    --white-main-background: #ffffff;
-    --white-main-text: #000000;
-
-    --white-secondary-background: #b6b6b6;
-    --white-secondary-text: #bde6ff;
-
-    --white-unnoticible-text: #ffffff;
-    
-    /*main theme*/
+    font-family: "Wix Madefor Display", sans-serif;
+    background-color: var(--main-background);
+    color:var(--main-text);
+    /* */
     --main-background: #3F72AF;
     --main-text: #F9F7F7;
-
     --secondary-background: #225288;
     --secondary-text: #539af2;
-
+    --third-background: #2a65ad;
     --unnoticible-text: #b4c1d1;
 
-    /*var reset
-    --main-background: var(--white-main-background);
-    --main-text: var(--white-main-text);
+    /* black-theme */
+    --main-background: #080808;
+    --secondary-background: #171717;
+    --secondary-text: #a3d2fc;
 
-    --secondary-background: var(--white-secondary-background);
-    --secondary-text: var(--white-secondary-text);
-
-    --unnoticible-text: var(--white-unnoticible-text);
+    /* white-theme */
+    --w-main-background: #dfdede;
+    --w-main-text: #333333;
+    --w-secondary-background: #f9f9f9;
+    --w-secondary-text: #539af2;
+    --w-icons-filter: invert(0.2);
+    /**/
+    --logo-size: 25px;
+    --icons-size: 18px;
+    --icons-filter: invert(0.85);
+    /* reset */
+    /*--main-background: var(--w-main-background);
+    --main-text: var(--w-main-text);
+    --secondary-background: var(--w-secondary-background);
+    --secondary-text: var(--w-secondary-text);
+    --icons-filter: var(--w-icons-filter);
     */
 }
 
-logo::before {
-    font-family: "Emblema One", system-ui;
-    content: '///';
-    font-weight: bolder;
-    border-color: white;
+#toptitle::before {
+    background-image: url('assets/icons/logo.svg');
+    background-size: var(--logo-size) var(--logo-size);
+    width: var(--logo-size); 
+    height: var(--logo-size);
+    display: inline-block;
+    content: '';
+    margin-right: 4px;
+    filter: var(--icons-filter);
+    transform: translateY(3px) rotate(-15deg);
 }
 
-@keyframes _blink {
-    0% {opacity: 0.5;}
-    50% {opacity: 1;}
-    100% {opacity: 0.5;}
+#views::before {
+    background-image: url('assets/icons/views.svg');
+    background-size: var(--icons-size) var(--icons-size);
+    width: var(--icons-size); 
+    height: var(--icons-size);
+    display: inline-block;
+    content: '';
+    margin-right: 5px;
+    margin-left: 5px;
+    filter: var(--icons-filter);
+    transform: translateY(2px);
+}
+
+#durability::before {
+    background-image: url('assets/icons/durability.svg');
+    background-size: var(--icons-size) var(--icons-size);
+    width: var(--icons-size); 
+    height: var(--icons-size);
+    display: inline-block;
+    content: '';
+    margin-right: 2px;
+    filter: var(--icons-filter);
+    transform: translateY(2px);
 }
 
 nav {
@@ -55,13 +83,7 @@ nav {
     margin-bottom: 5%;
 }
 
-html {
-    background-color: var(--main-background);
-    color:var(--main-text);
-}
-body {
-    margin: 0;
-}
+body {margin: 0;}
 
 #titlef {
     font-size: 25px;
@@ -74,7 +96,8 @@ header {
 }
 
 video {
-    width: 90%;
+    width: 80%;
+    max-width: 600px;
 }
 
 err {
@@ -85,18 +108,10 @@ err {
     color:var(--secondary-text);
 }
 
-#sec-col {
-    color: var(--secondary-text);
-}
-
 #toptitle {
     font-family: "Dela Gothic One", sans-serif;
     font-size: 150%;
     font-weight: 400;
-}
-
-#blink {
-    animation: _blink 2s infinite ease-in-out;
 }
 
 .card {
@@ -137,4 +152,20 @@ p {
     padding-right: 5%;
 }
 
+avatar {
+    background-color: var(--main-background);
+    border-radius: 5px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 19px;
+    width: 30px;
+    height: 30px;
+    display:inline-table;
+    margin-left: -3px;
+    margin-right: 3px;
+}
 
+profile {
+    background-color: var(--secondary-background);
+    padding: 10px;
+    border-radius: 5px;
+}
